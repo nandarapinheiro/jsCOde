@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Estrutura de repetição</title>
+    <meta content="">
+  </head>
+  <body>
+    <script>
+       function pulaLinha(){
+            document.write("<br><br>");
+      }
+
+       function mostra(frase){
+            document.write(frase);
+            pulaLinha();
+      }
+// contar o número de Copa de 4 em 4 anos      
+      var limite = parseInt(prompt("Entre com a data limite"));
+      var anoCopa = 1992;
+
+      while(anoCopa <= limite){//while == enquanto
+        mostra("A copa ocorreu em " + anoCopa);
+        anoCopa = anoCopa + 4; // + 4 é o incremento.
+      }
+
+      mostra("Fim");
+// contar número de 2 em 2, até 100
+      var contador = 2;
+      while(contador <=100){
+        mostra(contador);
+        contador = contador +2;
+      }
+      mostra ("Fim");
+// Constar um número de 30 a 40, inclusive 30 e 40, exceto os números 33 && 37
+      var contagem = 30;
+      while(contagem <=40){
+        if(contagem == 33){
+          contagem = contagem+1;
+        }
+        if(contagem ==37){
+          contagem =contagem+1;
+        }
+        else{
+          mostra(contagem);
+          contagem =contagem +1;
+        }
+      }
+
+      mostra("Fim");  
+      
+// Contar 20 a 0, ou seja contar de forma decrescente.
+
+      var contando = 20;
+      while( contando >=0){
+        mostra(contando);
+        contando = contando -1;
+      }
+      mostra("Fim");
+
+    </script>
+    
+  </body>
+</html>

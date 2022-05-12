@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Futebol Test</title>
+    <meta content="">
+  </head>
+  <body>
+      <script>
+          function pulaLinha(){
+            document.write("<br><br>");
+        }
+
+        function mostra(frase){
+            document.write(frase);
+            pulaLinha();
+        }
+
+      // Calcular número de vitórias e empates de uma time
+
+      var numberVitoria = parseInt(prompt("Insira o número de vitórias"));
+      var numberEmpate = parseInt(prompt("Insira o número de empates"));
+
+      //lógica o número de pontos é = num de vitórias * 3 + empates
+      var pontosTotal = (numberVitoria*3)+numberEmpate;
+      mostra("Os pontos do seu time são :" + pontosTotal); 
+      
+      //Comparar o desempenho com o ano passado que foi 28 pontos
+
+      if(pontosTotal < 28){
+        mostra("Seu time está pior que ao ano passado!");
+
+      }
+
+      if(pontosTotal >28){
+        mostra("Seu time está melhor que ao ano passado!");
+      }
+
+      if(pontosTotal == 28){
+        mostra("Seu time está igual ao ano passado")
+      }
+
+
+      </script>
+
+  </body>
+</html>
